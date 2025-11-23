@@ -31,3 +31,8 @@ For LLaDA-1.5 ([LLaDA-1.5](https://github.com/ML-GSAI/LLaDA-1.5)) model:
 cd llada_1_5
 ./eval_llada_1_5.sh <GPU_ID> <Task_Name> 'GSAI-ML/LLaDA-1.5' <Settings>
 ```
+
+Parameter descriptions:
+- `<GPU_ID>`: Choose which GPU to run on
+- `<Task_Name>`: Select the benchmark for evaluation
+- `<Settings>`: Select the configuration for evaluation
