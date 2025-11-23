@@ -7,4 +7,14 @@
 We propose ODB-dLLM, an arithmetic intensity inspired framework for accelerating diffusion-based large language models. By analyzing the interleaved compute- and memory-bound phases in existing dLLM inference frameworks, ODB-dLLM introduces adaptive length prediction strategy and jump-share speculative decoding to optimize computation-memory characteristics on hardware platforms, thereby maximizing inference efficiency.
 
 ### Installation
-
+1.Clone the repository:
+```
+git clone https://github.com/PKU-SEC-Lab/ODB-dLLM.git
+cd ODB-dLLM
+```
+2.Install dependencies:
+```
+conda create --name ODB-dLLM python=3.10
+conda activate ODB-dLLM
+pip install -r requirements.txt
+```
