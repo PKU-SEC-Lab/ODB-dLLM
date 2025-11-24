@@ -6,7 +6,8 @@
 
 We propose ODB-dLLM, an arithmetic intensity inspired framework for accelerating diffusion-based large language models. By analyzing the interleaved compute- and memory-bound phases in existing dLLM inference frameworks, ODB-dLLM introduces adaptive length prediction strategy and jump-share speculative decoding to optimize computation-memory characteristics on hardware platforms, thereby maximizing inference efficiency.
 
-**Overall Performance**
+**Overall Performance:**
+
 ODB-dLLM achieves 46×–162× speedup on LLaDA-Instruct and 50–182× speedup on LLaDA-1.5. Compared with Fast-dLLM, ODB-dLLM also delivers 2.63–6.30× and 2.60–7.22× speedup on the two models, respectively.
 <div align="center">
   <img src="asset/tab1.png" alt="LLaDA-Instruct" width="400">
