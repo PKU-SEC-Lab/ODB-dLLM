@@ -12,14 +12,14 @@ CONFIG_TYPE=${4:-"jump-share"}
 echo "Running configuration: $CONFIG_TYPE"
 
 if [ "$CONFIG_TYPE" = "llada_baseline" ]; then
-    # Fast-dLLM baseline: parallel + dualcache
+    # LLaDA baseline
     CUDA_VISIBLE_DEVICES=${GPU_ID} python eval_llada_baseline.py \
         --confirm_run_unsafe_code \
         --model llada_single_test \
         --tasks ${TASK} \
         --model_args model_path=${MODEL_PATH},is_check_greedy=False,gen_length=1024,steps=1024,block_length=32
 
-elif [ "$CONFIG_TYPE" = "fast_dllm" ]; then
+elif [ "$CONFIG_TYPE" = "fast_dllm_baseline" ]; then
     # Fast-dLLM baseline: parallel + dualcache
     CUDA_VISIBLE_DEVICES=${GPU_ID} python eval_fast_dllm.py \
         --confirm_run_unsafe_code \
