@@ -9,7 +9,9 @@ We propose ODB-dLLM, an arithmetic intensity inspired framework for accelerating
 **Overall Performance**
 ODB-dLLM achieves 46×–162× speedup on LLaDA-Instruct and 50–182× speedup on LLaDA-1.5. Compared with Fast-dLLM, ODB-dLLM also delivers 2.63–6.30× and 2.60–7.22× speedup on the two models, respectively.
 <div align="center">
-  <img src="asset/tab11.png" alt="LLaDA-Instruct" width="400">
+  <img src="asset/tab1.png" alt="LLaDA-Instruct" width="400">
+</div>
+<div align="center">
   <img src="asset/tab2.png" alt="LLaDA-1.5" width="400">
 </div>
 
