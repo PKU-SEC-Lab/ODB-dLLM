@@ -35,9 +35,9 @@ cd llada_1_5
 Parameter descriptions:
 - `<GPU_ID>`: Choose which GPU to run on
 - `<Task_Name>`: Select the benchmark for evaluation
-  -Options: `gsm8k, minerva_math, bbh, humaneval, mbpp`
+  - Options: `gsm8k, minerva_math, bbh, humaneval, mbpp`
 - `<Settings>`: Select the configuration for evaluation
-  -Options:
-    -`llada_baseline`: 
-    -`fast_dllm`: Fast-dLLM baseline: parallel + dualcache
+  - Options:
+    - `llada_baseline`: LLaDA baseline
+    - `fast_dllm_baseline`: Fast-dLLM baseline: parallel + dualcache
   
