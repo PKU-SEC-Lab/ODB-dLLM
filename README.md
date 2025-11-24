@@ -43,3 +43,12 @@ Parameter descriptions:
     - `adp`: parallel + dualcache + adaptive length prediction
     - `accept-jump`: parallel + dualcache + adaptive length prediction + accept-jump speculative
     - `jump-share`: parallel + dualcache + adaptive length prediction + jump-share speculative
+
+Example:
+```
+cd llada_instruct
+./eval_llada_instruct.sh 0 gsm8k 'GSAI-ML/LLaDA-8B-Instruct' jump-share
+```
+
+### Acknowledgements
+This repo is largely based on [Fast-dLLM](https://github.com/NVlabs/Fast-dLLM). We would also like to thank the authors of [LLaDA](https://github.com/ML-GSAI/LLaDA) and [LLaDA-1.5](https://github.com/ML-GSAI/LLaDA-1.5) for their excellent work and open-source contributions.
