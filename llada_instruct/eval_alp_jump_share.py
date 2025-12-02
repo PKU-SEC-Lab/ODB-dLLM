@@ -33,7 +33,7 @@ from lm_eval.api.registry import register_model
 from tqdm import tqdm
 import os
 from transformers import AutoTokenizer, AutoModel, AutoConfig
-from generate_adp_jump_share import generate_with_dual_cache
+from generate_alp_jump_share import generate_with_dual_cache
 from model.modeling_llada_spec_v2 import LLaDAModelLM
 import json
 import time
