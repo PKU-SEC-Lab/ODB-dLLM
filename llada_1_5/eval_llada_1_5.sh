@@ -27,9 +27,9 @@ elif [ "$CONFIG_TYPE" = "fast_dllm_baseline" ]; then
         --tasks ${TASK} \
         --model_args model_path=${MODEL_PATH},task_name=${TASK},gen_length=1024,steps=1024,block_length=32,use_cache=True,dual_cache=True,threshold=0.9,show_speed=True
 
-elif [ "$CONFIG_TYPE" = "adp" ]; then
+elif [ "$CONFIG_TYPE" = "alp" ]; then
     # parallel + dualcache + adaptive length prediction
-    CUDA_VISIBLE_DEVICES=${GPU_ID} python eval_adp.py \
+    CUDA_VISIBLE_DEVICES=${GPU_ID} python eval_alp.py \
         --confirm_run_unsafe_code \
         --model llada_single_test \
         --tasks ${TASK} \
@@ -37,7 +37,7 @@ elif [ "$CONFIG_TYPE" = "adp" ]; then
 
 elif [ "$CONFIG_TYPE" = "accept-jump" ]; then
     # parallel + dualcache + adaptive length prediction + accept-jump speculative
-    CUDA_VISIBLE_DEVICES=${GPU_ID} python eval_adp_accept_jump.py \
+    CUDA_VISIBLE_DEVICES=${GPU_ID} python eval_alp_accept_jump.py \
         --confirm_run_unsafe_code \
         --model llada_single_test \
         --tasks ${TASK} \
@@ -45,7 +45,7 @@ elif [ "$CONFIG_TYPE" = "accept-jump" ]; then
 
 elif [ "$CONFIG_TYPE" = "jump-share" ]; then
     # parallel + dualcache + adaptive length prediction + jump-share speculative
-    CUDA_VISIBLE_DEVICES=${GPU_ID} python eval_adp_jump_share.py \
+    CUDA_VISIBLE_DEVICES=${GPU_ID} python eval_alp_jump_share.py \
         --confirm_run_unsafe_code \
         --model llada_single_test \
         --tasks ${TASK} \
