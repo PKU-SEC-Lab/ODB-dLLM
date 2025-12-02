@@ -50,7 +50,7 @@ Parameter descriptions:
   - Options:
     - `llada_baseline`: LLaDA baseline
     - `fast_dllm_baseline`: Fast-dLLM baseline: parallel + dualcache
-    - `adp`: parallel + dualcache + adaptive length prediction
+    - `alp`: parallel + dualcache + adaptive length prediction
     - `accept-jump`: parallel + dualcache + adaptive length prediction + accept-jump speculative
     - `jump-share`: parallel + dualcache + adaptive length prediction + jump-share speculative
 
