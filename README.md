@@ -60,5 +60,16 @@ cd llada_instruct
 ./eval_llada_instruct.sh 0 gsm8k 'GSAI-ML/LLaDA-8B-Instruct' jump-share
 ```
 
+### Citation
+If our work assists your research, feel free to give us a star ⭐ or cite us using:
+```
+@article{wei2025orchestrating,
+  title={Orchestrating Dual-Boundaries: An Arithmetic Intensity Inspired Acceleration Framework for Diffusion Language Models},
+  author={Wei, Linye and Chen, Wenjue and Tang, Pingzhi and Guo, Xiaotian and Ye, Le and Wang, Runsheng and Li, Meng},
+  journal={arXiv preprint arXiv:2511.21759},
+  year={2025}
+}
+```
+
 ### Acknowledgements
 This repo is largely based on [Fast-dLLM](https://github.com/NVlabs/Fast-dLLM). We would also like to thank the authors of [LLaDA](https://github.com/ML-GSAI/LLaDA) and [LLaDA-1.5](https://github.com/ML-GSAI/LLaDA-1.5) for their excellent work and open-source contributions.
