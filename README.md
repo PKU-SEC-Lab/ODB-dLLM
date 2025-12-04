@@ -73,3 +73,6 @@ If our work assists your research, feel free to give us a star ⭐ or cite us us
 
 ### Acknowledgements
 This repo is largely based on [Fast-dLLM](https://github.com/NVlabs/Fast-dLLM). We would also like to thank the authors of [LLaDA](https://github.com/ML-GSAI/LLaDA) and [LLaDA-1.5](https://github.com/ML-GSAI/LLaDA-1.5) for their excellent work and open-source contributions.
+
+### Contact
+If you have any questions, please contact us via email lywei25@stu.pku.edu.cn.
